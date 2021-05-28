@@ -1,0 +1,30 @@
+ 
+html {
+    font-family: Arial,sans-serif;
+}
+
+input[type=text],strong,span,section {
+    display: block;
+    margin: .25em 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+strong {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    border: 1px solid #aaa;
+    padding: .1em;
+}
+
+.disclaimer {
+    font-style: italic;
+    font-size: 90%;
+}
+
+button[type=submit] {
+    font-weight: bold;
+}

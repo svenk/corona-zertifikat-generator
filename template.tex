@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages,tikz,xcolor}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+\pagestyle{empty}% hide page number
+\color{blue}% color for the text
+\includepdf[pagecommand={\begin{tikzpicture}[remember picture, overlay]
+	\node[align=left] at (10,-1.5) {
+			FIRMA-NAME \\
+			FIRMA-STRASSE-HAUSNR \\
+			FIRMA-PLZ-ORT
+	};
+	\node[anchor=west,align=left] at (3,-3.2) {
+		PERSON-NAME
+	};
+	\node[anchor=west,align=left] at (3, -3.9) {
+		PERSON-ADRESS
+	};
+	\node[anchor=west,align=left] at (3, -4.6) {
+		PERSON-GEBURTSNAME
+	};
+	\node[anchor=west,align=left] at (3, -6.9) {
+	    TEST-NAME
+	};
+	\node[anchor=west,align=left] at (3, -7.6) {
+		TEST-HERSTELLER
+	};
+	\node[anchor=west,align=left] at (6, -8.3) {
+		TEST-DATUM-UHRZEIT
+	};
+	\node[anchor=west,align=left] at (6, -9.3) {
+		TEST-PERSON-AUFSICHT
+	};
+	\node[anchor=west,align=left] at (5.25, -10.2) { XTA };
+	\node[anchor=west,align=left] at (11.35, -10.2) { XTS };
+	\node[anchor=west,align=left] at (2.65, -12.75) { XEP };
+	\node[anchor=west,align=left] at (8.80, -12.75) { XEN };
+	\node[anchor=west,align=left] at (-1, -14.75) {
+		TEST-DATUM-UNTERSCHRIFT
+	};
+	\node[anchor=west,align=left] at (5, -14.75) {
+		\includegraphics{signature.pdf}
+	};
+	\node[anchor=west,align=left] at (8.5, -14.75) {
+		\includegraphics[width=4.5cm,angle=3,origin=c]{stamp.png}
+	};
+\end{tikzpicture}}]{gv29-1anlage3.pdf}
+\end{document}
+ 
